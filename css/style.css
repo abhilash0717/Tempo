@@ -63,3 +63,20 @@
   background-color: #ed284c;
   border: 2px solid #ed284c;
 }
+
+.modal-header, .close {
+  background-color: #eb4261;
+  color : #fff;
+}
+.modal-body a {
+  text-decoration: none;
+  color: grey;
+}
+
+.modal-body h4 a.active:hover {
+  color: #ed284c !important;
+}
+
+.modal-body h4 a:hover {
+  color: #ed284c !important;
+}

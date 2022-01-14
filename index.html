@@ -9,6 +9,7 @@
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="js/app.js" type="text/Javascript">
   <link rel="stylesheet" href="css/style.css">
   <title>Tempo</title>
 </head>
@@ -17,11 +18,12 @@
 
   <!-- Navbar section starts here -->
   <div>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <div class="container">
         <a href="#Home-Section" class="navbar-brand">TEMPO</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span style="color: #fff;" class="navbar-toggler-icon"></span>
+        <!-- below d-none and all hide classes are to hide the toggler icon after the small screen -->
+        <button id="burger" onClick="show()" class="navbar-toggler d.none d-md-none d-lg-none d-xl-none" data-toggle="modal" data-target="#collapseModal">
+          <span style="color: #fff;" class="navbar-toggler-icon "></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -73,15 +75,40 @@
       <div class="container">
         <div class="Home-Inner text-center">
           <p class="welcome-text mb-3">Welcome to <span style="font-weight: bold;">Tempo</span></p>
-          <p class = "mb-3" style="font-size: 30px;font-weight: 700;">WE'RE CREATIVE AGENCY</p>
-          <p class = "mb-3" style="font-size: 20px">We are team of talented designers making websites with Bootstrap</p>
-        <button class="btn mt-3">GET STARTED</button>
+          <p class="mb-3" style="font-size: 30px;font-weight: 700;">WE'RE CREATIVE AGENCY</p>
+          <p class="mb-3" style="font-size: 20px">We are team of talented designers making websites with Bootstrap</p>
+          <button class="btn mt-3">GET STARTED</button>
         </div>
       </div>
     </div>
   </div>
   <!-- Home section ends here -->
 
+  <!-- Modal section starts here -->
+  <div class="modal fade mt-3" id="collapseModal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">TEMPO</div>
+          <!-- Below code is for the x button which closes the modal -->
+          <button id="close" onClick="Close()" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4><a href="#" class = "active">Home</a></h4>
+          <h4><a href="#">About</a></h4>
+          <h4><a href="#">Services</a></h4>
+          <h4><a href="#">Portfolio</a></h4>
+          <h4><a href="#">Team</a></h4>
+          <h4><a href="#">Blog</a></h4>
+          <h4><a href="#">DropDown</a></h4>
+          <h4><a href="#">Contact</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal section ends here -->
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -93,9 +120,8 @@
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
 
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
+  <script src="js/app.js">
+
   </script>
 </body>
 
