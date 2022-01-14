@@ -64,9 +64,10 @@
   border: 2px solid #ed284c;
 }
 
-.modal-header, .close {
+.modal-header,
+.close {
   background-color: #eb4261;
-  color : #fff;
+  color: #fff;
 }
 .modal-body a {
   text-decoration: none;
@@ -79,4 +80,32 @@
 
 .modal-body h4 a:hover {
   color: #ed284c !important;
+}
+
+#About-Section {
+  min-height: 200px;
+}
+
+.about-text {
+  color: #ed284c;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 35px;
+  border: 2px solid #ed284c;
+  margin-top: 20px;
+}
+
+.about-inner .row .col-md-6 .learn-more {
+  padding: 8px 25px;
+  border-radius: 35px;
+  color: #ed284c;
+  background-color: transparent;
+  border: 2px solid #ed284c;
+  margin-bottom: 10px;
+}
+
+button.learn-more:hover {
+  background-color: #ed284c !important;
+  border: 2px solid #ed284c !important;
+  color : #fff !important;
 }

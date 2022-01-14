@@ -22,7 +22,8 @@
       <div class="container">
         <a href="#Home-Section" class="navbar-brand">TEMPO</a>
         <!-- below d-none and all hide classes are to hide the toggler icon after the small screen -->
-        <button id="burger" onClick="show()" class="navbar-toggler d.none d-md-none d-lg-none d-xl-none" data-toggle="modal" data-target="#collapseModal">
+        <button id="burger" onClick="show()" class="navbar-toggler d.none d-md-none d-lg-none d-xl-none"
+          data-toggle="modal" data-target="#collapseModal">
           <span style="color: #fff;" class="navbar-toggler-icon "></span>
         </button>
 
@@ -70,7 +71,7 @@
   <!-- Navbar section ends here -->
 
   <!-- Home section Starts here -->
-  <div id="Home-Section">
+  <div id="Home-Section" class="mb-5">
     <div class="dark-overlay">
       <div class="container">
         <div class="Home-Inner text-center">
@@ -84,6 +85,67 @@
   </div>
   <!-- Home section ends here -->
 
+  <!-- About Section starts here -->
+  <div id="About-Section" class="mt-5 ">
+    <div class="container">
+      <div class="about-inner text-center">
+        <h5 class="about-text mb-4">ABOUT</h5>
+        <h1 class="mb-4" style="font-weight: 400;">Learn more <span style="color:#ed284c;font-weight:500 ;">About
+            Us</span></h1>
+        <p class="mb-4 " style="font-size:27px;font-weight: 500;">Ut possimus qui ut temporibus culpa velit eveniet modi
+          omnis est adipisci expedita at voluptas atque vitae
+          autem.</p>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <p class="mb-4" style="font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+
+            <div class="d-flex">
+              <!-- padding all over and starts at the beginning -->
+              <div class="p-2 align-self-start">
+                <i class="fas fa-check fa-2x" style="color:#ed284c"></i>
+              </div>
+              <!-- padding all over and starts at the end -->
+              <div class="p-2 align-self-end">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </div>
+            </div>
+            <div class="d-flex">
+              <!-- padding all over and starts at the beginning -->
+              <div class="p-2 align-self-start">
+                <i class="fas fa-check fa-2x" style="color:#ed284c"></i>
+              </div>
+              <!-- padding all over and starts at the end -->
+              <div class="p-2 align-self-end">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </div>
+            </div>
+            <div class="d-flex">
+              <!-- padding all over and starts at the beginning -->
+              <div class="p-2 align-self-start">
+                <i class="fas fa-check fa-2x" style="color:#ed284c"></i>
+              </div>
+              <!-- padding all over and starts at the end -->
+              <div class="p-2 align-self-end">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p style="font-size: 17px;margin-bottom: 35px;">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <button class="learn-more">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Section ends here -->
+
   <!-- Modal section starts here -->
   <div class="modal fade mt-3" id="collapseModal" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-lg">
@@ -96,7 +158,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <h4><a href="#" class = "active">Home</a></h4>
+          <h4><a href="#" class="active">Home</a></h4>
           <h4><a href="#">About</a></h4>
           <h4><a href="#">Services</a></h4>
           <h4><a href="#">Portfolio</a></h4>
