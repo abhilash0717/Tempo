@@ -1,0 +1,39 @@
+.nav-item a {
+  font-size: 20px;
+  color: #fff;
+  box-shadow: none;
+}
+.navbar-brand {
+  font-size: 30px;
+  color: #fff;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #fff !important;
+}
+
+#Home-Section {
+  background: url(../img/hero-bg.jpg);
+  /* background-attachment : fixed --> kind of gives an parallax effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  min-height: 700px;
+  background-position: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+#Home-Section .container img {
+  margin-top: -300px;
+  position:fixed;
+}
+
+#Home-Section .dark-overlay {
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.7);
+}
