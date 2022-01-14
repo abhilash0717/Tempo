@@ -82,17 +82,15 @@
   color: #ed284c !important;
 }
 
-#About-Section {
-  min-height: 200px;
-}
 
-.about-text {
+.about-text, .services-text{
   color: #ed284c;
   display: inline-block;
   padding: 8px 20px;
   border-radius: 35px;
   border: 2px solid #ed284c;
   margin-top: 20px;
+  margin-bottom : 20px;
 }
 
 .about-inner .row .col-md-6 .learn-more {
