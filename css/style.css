@@ -83,7 +83,7 @@
 }
 
 .about-text,
-.services-text {
+.services-text, .portfolio-text {
   color: #ed284c;
   display: inline-block;
   padding: 8px 20px;
@@ -107,10 +107,47 @@ button.learn-more:hover {
   border: 2px solid #ed284c !important;
   color: #fff !important;
 }
+#services-section .card {
+  transition: all 1.2s;
+}
 
-#services-section  .card:hover {
+#services-section .card:hover {
   color: #fff !important;
   background-color: #ed284c !important;
   cursor: pointer !important;
   border-radius: 10px;
+}
+#callToAction {
+  background: url(../img/cta-bg.jpg);
+  min-height: 200px;
+  color: #fff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: fixed;
+  background-size: cover;
+  min-height: 250px;
+  margin-bottom: 100px;
+}
+
+#callToAction .dark-overlay {
+  left: 0;
+  width: 100%;
+  min-height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#callToAction .container .btn {
+  padding: 10px 30px;
+  border-radius: 28px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 25px;
+  transition: all 1.2s;
+}
+
+#callToAction .container .btn:hover {
+  color: #fff;
+  background-color: #ed284c;
+  border: 2px solid #ed284c;
 }
