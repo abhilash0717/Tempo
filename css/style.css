@@ -83,7 +83,8 @@
 }
 
 .about-text,
-.services-text, .portfolio-text {
+.services-text,
+.portfolio-text {
   color: #ed284c;
   display: inline-block;
   padding: 8px 20px;
@@ -150,4 +151,29 @@ button.learn-more:hover {
   color: #fff;
   background-color: #ed284c;
   border: 2px solid #ed284c;
+}
+.portfolio-inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.portfolio-inline p {
+  font-size: 10px;
+  color: #ed284c;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 35px;
+  border: 2px solid #ed284c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 1.2s;
+}
+.portfolio-inline p:hover {
+  color: #fff !important;
+  background-color: #ed284c !important;
+  cursor: pointer !important;
+  border-radius: 10px;
+}
+#portfolio {
+  margin-bottom : 100px;
 }
