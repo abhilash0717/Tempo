@@ -177,3 +177,19 @@ button.learn-more:hover {
 #portfolio {
   margin-bottom : 100px;
 }
+#pricing-section .container .btn {
+  padding: 10px 30px;
+  border-radius: 28px;
+  background-color: transparent;
+  border: 2px solid #ed284c;
+  color: #ed284c;
+  font-size: 15px;
+  transition: all 1.2s;
+}
+
+#pricing-section .container .btn:hover {
+  color: #fff !important;
+  background-color: #ed284c !important;
+  cursor: pointer !important;
+  border-radius: 10px;
+}
